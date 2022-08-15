@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>opgave 1 site</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
     <script src="js/variables.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
 
     <h1>test side</h1>
+    <!-- Only one h1 element on a page, so no need for id or class -->
     <h2 class="smallHeadline">afsnit</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-        quam,
-        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-        ultricies
-        mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat
-        wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum,
-        eros
-        ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.
-        Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam
-        erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <p id="mainParagraph">
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+      ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+      tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+      Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit
+      amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum
+      sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget
+      tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim
+      ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent
+      dapibus, neque id cursus faucibus, tortor neque egestas augue, eu
+      vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt
+      quis, accumsan porttitor, facilisis luctus, metus
+    </p>
 
     <h2 class="smallHeadline">fieldset</h2>
 
     <fieldset>
+      <legend id="legendMain">
+        Forskellige inputs og interaktions muligheder
+      </legend>
 
-        <legend>Forskellige inputs og interaktions muligheder</legend>
+      <label for="monthOne" class="label">Month</label>
+      <input type="month" id="monthOne" />
 
-        <label>Month</label>
-        <input type="month">
+      <label for="checkboxOne" class="label"
+        ><input type="checkbox" name="checkbox" id="checkboxOne" />Check</label
+      >
 
-        <label><input type="checkbox" name="checkbox">Check</label>
+      <label for="colorOne" class="label">Color</label>
+      <input type="color" id="colorOne" />
 
-        <label>Color</label>
-        <input type="color">
+      <label class="label">radio buttons</label>
+      <label for="radioOne" class="label"
+        ><input type="radio" name="radio" id="radioOne" />option 1</label
+      >
+      <label for="radioTwo" class="label"
+        ><input type="radio" name="radio" id="radioTwo" />option 2</label
+      >
+      <label for="radioThree" class="label"
+        ><input type="radio" name="radio" id="radioThree" />option 3</label
+      >
 
+      <label class="label">Range</label>
+      <input type="range" id="rangeOne" />
 
-        <label>radio buttons</label>
-        <label><input type="radio" name="radio">option 1</label>
-        <label><input type="radio" name="radio">option 2</label>
-        <label><input type="radio" name="radio">option 3</label>
+      <input type="button" value="input Button" id="buttonOne" />
 
+      <input type="reset" value="Reset" id="resetOne" />
 
-        <label>Range</label>
-        <input type="range">
+      <input type="submit" value="Submit" id="submitOne" />
 
-        <input type="button" value="input Button">
+      <button id="buttonTwo">button</button>
 
+      <label for="selectOne" class="label">Select</label>
 
-        <input type="reset" value="Reset">
-
-
-        <input type="submit" value="Submit">
-
-        <button>button</button>
-
-        <label>Select</label>
-
-        <select>
-            <optgroup label="first options">
-                <option>select 1</option>
-                <option>select 2</option>
-                <option>select 3</option>
-            </optgroup>
-            <optgroup label="second options">
-                <option>select 4</option>
-                <option>select 5</option>
-                <option>select 6</option>
-            </optgroup>
-        </select>
-
+      <select id="selectGroup">
+        <optgroup label="first options">
+          <option id="selectOne">select 1</option>
+          <option id="selectTwo">select 2</option>
+          <option id="selectThree">select 3</option>
+        </optgroup>
+        <optgroup label="second options">
+          <option id="selectFour">select 4</option>
+          <option id="selectFive">select 5</option>
+          <option id="selectSix">select 6</option>
+        </optgroup>
+      </select>
     </fieldset>
-
-
-
-</body>
-
+  </body>
 </html>
