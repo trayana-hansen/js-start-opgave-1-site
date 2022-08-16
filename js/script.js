@@ -1,10 +1,12 @@
-// target the h1 by tag because it is only one on the page
-let h1 = document.getElementsByTagName("h1");
-console.log(h1);
+// target the h1 by id because it is only one on the page
+let headlineMain = document.getElementById("headlineMain").innerHTML;
+console.log(headlineMain);
 
 //target the h2's by their class name
-let h2 = document.getElementsByClassName("smallHeadline");
-console.log(h2);
+let smallHeadlines = document.getElementsByClassName("smallHeadline");
+console.log(smallHeadlines[0]);
+smallHeadlines[0].style.backgroundColor = "blue";
+smallHeadlines[1].style.color = "pink";
 
 //show the content of the specific paragraph through id
 let mainParagraph = document.getElementById("mainParagraph").innerHTML;
